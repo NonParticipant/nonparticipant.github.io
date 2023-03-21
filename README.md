@@ -4,3 +4,7 @@ This is as minimal as possible so that you can implement whatever you want over 
 The `theme` in `_config.yml` is explicitly set to `null`, so all styling will be from `style.css` and the browser defaults.
 
 The `_sass` directory is not used.  If you plan to make a complicated site then you should consider using it; see the [documentation on the Jekyll site](https://jekyllrb.com/docs/assets/).
+
+---
+
+Just close this repository and use it as your Pages repo.  You should probably delete the README.md as well.
