@@ -34,6 +34,9 @@ baseurl: ""
 #    Build settings.    #
 #########################
 
+# Turn the default theme off.
+theme: null
+
 # Configure which Markdown processor should be used.
 markdown: kramdown
 
