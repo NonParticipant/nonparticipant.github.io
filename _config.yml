@@ -1,0 +1,63 @@
+#########################
+#     Site settings.    #
+#########################
+
+# Your site's title.  Accessed with: {{ site.title }}
+title: Your Site's Name
+
+
+# Your site's description.  Accessed with: {{ site.description }}
+# ">-" indicates newlines should be ignored until the next entry.
+description: >- 
+  This is the description of your site.
+  It can be multiple lines long.
+  This description will appear in the <head> of your pages.
+
+
+# Your email address.  Accessed with: {{ site.email }}
+email: webmaster@sitename.com
+
+
+# Your site's full URL, including protocol, domain, and (if you need it) port number.
+# Note: Do not include a "/" at the end of the url.
+# Accessed with: {{ site.url }}
+url: https://your-github-username.github.io 
+
+
+# Your site's subpath (if needed).  For example, "/blog" or "/site".
+# For a basic GitHub Pages site this should be unnecessary.
+# Accessed with: {{ site.baseurl }}
+baseurl: "" 
+
+
+#########################
+#    Build settings.    #
+#########################
+
+# Configure which Markdown processor should be used.
+markdown: kramdown
+
+# Inclusions.
+# Tell Jekyll to process files in _pages, even though it begins with a "_".
+include: [_pages]
+
+# Exclusions.
+# Force Jekyll to NOT process specific files or folders.
+exclude: []
+
+
+# Default Front Matter
+# Configure default front matter for all files matching the defined scope.
+defaults:
+  -
+    scope:
+      path:     ""        # All files
+    values:
+      layout:   "default"
+      excerpt:  ""
+      category: ""
+      tags:     ""
+      image:    ""
+      author:   "Your Name"
+      description: ""
+

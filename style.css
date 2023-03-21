@@ -1,0 +1,8 @@
+* {
+  font-family: Verdana, sans-serif;
+}
+
+nav li {
+  display: inline;
+  padding: 4px 20px;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  {% if page.title and page.title != "" %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+</head>
+  
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+
+  <nav>
+    {% include nav.html %}
+  </nav>
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
+</html>
