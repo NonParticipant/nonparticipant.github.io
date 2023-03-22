@@ -40,6 +40,9 @@ theme: null
 # Configure which Markdown processor should be used.
 markdown: kramdown
 
+sass:
+  style: compressed
+
 # Inclusions.
 # Tell Jekyll to process files in _pages, even though it begins with a "_".
 include: [_pages]
