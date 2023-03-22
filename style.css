@@ -3,3 +3,6 @@
 
 @import 'normalize'
 @import 'general'
+@import 'blocks'
+@import 'elements'
+@import 'modifiers'
