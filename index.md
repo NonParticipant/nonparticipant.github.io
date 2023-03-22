@@ -6,6 +6,7 @@ title: "Home"
 
 {{ site.description }}
 
+
 ## Current Posts
 
 <ul>
@@ -13,3 +14,6 @@ title: "Home"
   <li>{{ post.date  | date: "%Y-%m-%d" }} - <a href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+
+
+.
