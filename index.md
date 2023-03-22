@@ -2,18 +2,12 @@
 title: "Home"
 ---
 
-# Welcome to {{ site.title }}
+{% assign sections = site.mainpage | sort: 'order' %}
 
-{{ site.description }}
-
-
-## Current Posts
-
-<ul>
-{% for post in site.posts %}
-  <li>{{ post.date  | date: "%Y-%m-%d" }} - <a href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% for section in sections %}
+  {% if section.include != null %}
+    {% include {{ section.include }} %}
+  {% else %}
+    {% include sections/default.html %}
+  {% endif %}
 {% endfor %}
-</ul>
-
-
-.
