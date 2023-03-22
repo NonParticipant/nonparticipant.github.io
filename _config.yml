@@ -44,7 +44,8 @@ sass:
   style: compressed
   
 collections:
-- collections
+- mainpage
+- projects
 
 # Inclusions.
 # Tell Jekyll to process files in _pages, even though it begins with a "_".
